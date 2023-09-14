@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Luas Segitiga</title>
+    </head>
+    <body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+    <h1>Menghitung Luas Persegi</h1>
+    <label for="">Sisi Persegi</label><br>
+    <input type="number" id="sisi"><br>
+    <button id="hitung">Hitung</button><br>
+    <button id="reset">Reset</button>
+    <div id="output"></div>
+
+    <h1>Menghitung Keliling Persegi</h1>
+    <label for="">Sisi Persegi</label><br>
+    <input type="number" id="sisi"><br>
+    <button id="hitung">Hitung</button><br>
+    <button id="reset">Reset</button>
+    <div id="output"></div>
+
+    </center>
+
+    #rumus luas persegi
+    <script>
+        const sisi = document.getElementById('sisi')
+        const hitung = document.getElementById('hitung')
+        const output = document.getElementById('output')
+        hitung.addEventListener('click',function(){
+            let a = sisi.value
+            let b = 0.5*a*t
+            output.innerHTML = `Hasilnya adalah ${b}`
+        })
+    </script>
+
+    #rumus keliling persegi
+
+    <script>
+        let btnReset = document.querySelector('button');
+        let inputs = document.querySelectorAll('input');
+
+        btnReset.addEventListener('click', () => {
+        inputs.forEach(input =>  input.value = '');
+        });
+    </script>
+    </body>
+    </html>
